@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{site.title}}</title>
+    <title>le site</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,13 +58,31 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                     {% for p in site.pages | sort:weight %}
+                     
     <li>
-      <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-        {{ p.title }}
+      <a  href="/about.html">
+        Accueil
       </a>
     </li>
-  {% endfor %}
+  
+    <li>
+      <a class="active" href="/blog.html">
+        Blog
+      </a>
+    </li>
+  
+    <li>
+      <a  href="/contact.html">
+        Contact
+      </a>
+    </li>
+  
+    <li>
+      <a  href="/index.html">
+        Portfolio
+      </a>
+    </li>
+  
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -80,7 +98,11 @@
 
 <main class="container">
 
-{{ content }}
+<h1>Mes articles</h1>
+
+<ul>
+  
+</ul>
 
 </main>
 <footer>
